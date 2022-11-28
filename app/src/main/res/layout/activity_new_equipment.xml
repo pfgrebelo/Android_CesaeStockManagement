@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_dark"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".views.newEquipmentActivity">
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:text="Adicionar novo equipamento"
+        android:textColor="@color/white"
+        android:textSize="25dp" />-->
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_newPhoto"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/download_2"
+        app:civ_border_color="@color/white"
+        app:civ_border_overlay="true"
+        app:civ_border_width="2dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="1"
+            android:text="Nome:"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/et_newName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="1"
+            android:text="Marca:"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/et_newBrand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="1"
+            android:text="Descrição:"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/et_newDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal">
+
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="5sp"
+             android:layout_marginLeft="5sp"
+             android:layout_weight="1"
+             android:text="Cor:"
+             android:textColor="@color/white" />
+
+         <EditText
+             android:id="@+id/et_newColor"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="3"
+             android:gravity="center"
+             android:textColor="@color/white" />
+     </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5sp"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="1"
+            android:text="Categoria:"
+            android:textColor="@color/white" />
+
+        <Spinner
+            android:id="@+id/spinner_newEquipment_category"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/white"
+            android:textSize="100sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5sp"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="1"
+            android:text="Sala:"
+            android:textColor="@color/white" />
+
+        <Spinner
+            android:id="@+id/spinner_addnew_equip_roomsName_list"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/white"
+            android:textSize="100sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="1"
+            android:text="Associado:"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/et_newAssign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_newBack"
+            android:layout_width="170sp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="2"
+            android:textSize="17sp"
+            android:backgroundTint="@color/secondary_color"
+            android:text="Cancelar"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/bt_newAdd"
+            android:layout_width="170sp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="2"
+            android:backgroundTint="@color/secondary_color"
+            android:text="Gravar"
+            android:textSize="17sp"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</LinearLayout>

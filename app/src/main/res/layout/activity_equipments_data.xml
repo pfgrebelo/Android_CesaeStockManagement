@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_dark"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".views.EquipmentsDataActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_dataPhoto"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/download_2"
+        app:civ_border_color="@color/white"
+        app:civ_border_overlay="true"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/tv_dataDocId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="1"
+            android:text="Nome:"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/et_dataName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="1"
+            android:text="Marca:"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/et_dataBrand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="1"
+            android:text="Descrição:"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/et_dataDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="1"
+            android:text="Cor:"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/et_dataColor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textColor="@color/white" />
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5sp"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="1"
+            android:text="Categoria:"
+            android:textColor="@color/white" />
+
+        <Spinner
+            android:id="@+id/spinner_equipment_category_edit"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/white"
+            android:textSize="100sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5sp"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="1"
+            android:text="Sala:"
+            android:textColor="@color/white" />
+
+        <Spinner
+            android:id="@+id/spinner_roomsName_list"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/white"
+            android:textSize="100sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dataAssign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="1"
+            android:text="Associado:"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/et_dataAssign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:enabled="false"
+            android:gravity="center"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_dataGenQRCode"
+            android:layout_width="150sp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/secondary_color"
+            android:text="Gerar QRCode"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/bt_dataScanQRCode"
+            android:layout_width="170sp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/secondary_color"
+            android:drawableRight="@drawable/qr_icon"
+            android:text="Associar"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_dataDelete"
+            android:layout_width="150sp"
+            android:layout_height="60dp"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/delete"
+            android:text="Eliminar" />
+
+        <Button
+            android:id="@+id/bt_dataEdit"
+            android:layout_width="170sp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/secondary_color"
+            android:text="Confirmar edição"
+            android:textSize="15sp"
+            android:textAllCaps="false" />
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_color"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp">
+
+        <TextView
+            android:id="@+id/tv_nameRoom"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/gradient_background"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:text="Nome da sala"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_descRoom"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/gradient_background"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tv_nameRoom"
+            android:paddingLeft="30dp"
+            android:text="Nome da sala"
+            android:textColor="@color/grey"
+
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

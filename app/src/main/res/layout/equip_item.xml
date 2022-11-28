@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_color"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_photoEquip"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo_cesae_icon"
+            android:layout_margin="5dp"
+            app:civ_border_color="@color/secondary_color"
+            app:civ_border_overlay="true"
+            app:civ_border_width="2dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_color"
+            android:paddingLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="5dp">
+
+
+            <TextView
+                android:id="@+id/tv_nameEquip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradiente_claro"
+                android:paddingLeft="10dp"
+                android:text="Nome do equipamento"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:fontFamily="sans-serif-thin"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_brandEquip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_nameEquip"
+                android:background="@drawable/gradiente_claro"
+                android:paddingLeft="10dp"
+                android:text="Marca do equipamento"
+                android:textColor="@color/grey"
+
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

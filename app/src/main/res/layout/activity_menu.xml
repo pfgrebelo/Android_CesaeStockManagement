@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gradient_dark"
+    tools:context=".views.MenuActivity">
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo_cesae_white"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Menu"
+        android:textSize="45dp"
+        android:paddingBottom="30dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+    <Button
+        android:id="@+id/bt_menuRooms"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/secondary_color"
+        android:padding="5dp"
+        android:textSize="17sp"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:text="Salas"/>
+
+    <Button
+        android:id="@+id/bt_menuEquipments"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/secondary_color"
+        android:padding="5dp"
+        android:textSize="17sp"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        android:text="Equipamentos"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+    <Button
+        android:id="@+id/bt_menuQRcode"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/secondary_color"
+        android:padding="5dp"
+        android:textSize="17sp"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        android:text="Ler QRcode"/>
+
+    <Button
+        android:id="@+id/bt_user_account"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/secondary_color"
+        android:padding="5dp"
+        android:textSize="17sp"
+        android:layout_margin="10dp"
+        android:textAllCaps="false"
+        android:text="Conta"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/secondary_color"
+        android:padding="5dp"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:layout_marginTop="60dp"
+        android:text="Sair"/>
+
+
+
+</LinearLayout>
